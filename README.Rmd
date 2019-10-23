@@ -88,6 +88,13 @@ Another search: published between 2000 and 2005
 dc_search(q = "publicationYear:[2000 TO 2005]", fl = c('doi', 'publicationYear'), rows = 5)
 ```
 
+Note that searching a specific field (as above) requires your input to be named.
+Another example for this: all datasets _relating_ to a given article.
+
+```{r}
+dc_search(q = "relatedIdentifier:\"10.5438/0012\"")
+```
+
 ### Facet
 
 ```{r}
